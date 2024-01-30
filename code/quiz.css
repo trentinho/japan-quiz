@@ -1,0 +1,143 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: #b0c4de;
+  color: #1b1b32;
+  font-family: Helvetica;
+}
+
+img {
+  max-width: 95%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#title{
+  justify: center;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 24px;
+}
+
+.question{
+  text-align: center; 
+}
+
+.options {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldset-container {
+  max-width: 90%;
+}
+
+.options fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  background: linen;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.options input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.options img {
+  max-width: 100%;
+  position: relative;
+}
+
+.options input[type="radio"]:checked + img {
+  border: 5px solid red;
+  background-color: red;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 98.5%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  display: none;
+  text-align: center;
+}
+
+.options img:hover + figcaption {
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  width: 30%;
+  padding: 15px;
+  font-size: 23px;
+  background: #d0d0d5;
+  border: 3px solid black;
+  border-radius:10px;
+}
+
+button:hover {
+  background-color:black;
+  color: white;
+      transition: 0.7s;
+}
+
+#modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 80%;
+  text-align: center;
+}
+
+#suggestion-image {
+  max-width: 30%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#close-button {
+  margin-top: 10px;
+  font-size: 15px;
+  height: 30px;
+  width: 80px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
