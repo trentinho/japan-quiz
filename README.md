@@ -1,0 +1,1 @@
+I tried creating a quiz to give a suggestion on where to go in Japan based on what people choose. Each choice has a different class in the html. The JavaScript then counts up the class totals and gives a suggestion based on the totals.
